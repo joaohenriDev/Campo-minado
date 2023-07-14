@@ -57,7 +57,7 @@ public class Campo {
             }
 
             if (vizinhacaSegura()){
-                vizinhos.forEach(v -> v.abrir());
+                vizinhos.forEach(Campo::abrir);
             }
             return true;
         } else {
@@ -72,8 +72,15 @@ public class Campo {
     public void minar(){
         minado = true;
     }
+    public boolean isMinado(){
+        return minado;
+    }
     public boolean isMarcado() {
         return marcado;
+    }
+
+    void setAberto(boolean aberto) {
+        this.aberto = aberto;
     }
 
     public boolean isAberto(){
@@ -98,7 +105,7 @@ public class Campo {
         return desvendado || protegido;
     }
 
-    long minasNaVizinhanca(){
+    public long minasNaVizinhanca(){
         return vizinhos.stream().filter(v -> v.minado).count();
     }
 

@@ -2,6 +2,7 @@ package test.br.com.joao.cm.modelo;
 
 import br.com.joao.cm.excecao.ExplosaoException;
 import br.com.joao.cm.modelo.Campo;
+import br.com.joao.cm.modelo.Tabuleiro;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -131,4 +132,24 @@ public class CampoTeste {
 
         assertTrue(campo22.isAberto() && campo11.isFechado());
     }
+
+    @Test
+    void testeObjetivoAlcancado(){
+
+        Campo campo11 = new Campo(2, 3);
+        Campo campo12 = new Campo(1,2);
+        campo12.minar();
+
+        Campo campo22 = new Campo(2,2);
+        campo22.adicionarVizinho(campo11);
+        campo22.adicionarVizinho(campo12);
+
+        campo22.adicionarVizinho(campo11);
+
+        campo.adicionarVizinho(campo22);
+        campo.abrir();
+
+        assertTrue(campo22.isAberto() && campo11.isFechado());
+    }
+
 }
