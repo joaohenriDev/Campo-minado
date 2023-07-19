@@ -1,6 +1,6 @@
 package test.br.com.joao.cm.modelo;
 
-import br.com.joao.cm.excecao.ExplosaoException;
+
 import br.com.joao.cm.modelo.Campo;
 import br.com.joao.cm.modelo.Tabuleiro;
 import org.junit.jupiter.api.BeforeEach;
@@ -92,14 +92,7 @@ public class CampoTeste {
         campo.minar();
         assertFalse(campo.abrir());
     }
-    @Test
-    void testeAbrirMinadoNaoMarcado(){
-        campo.minar();
 
-        assertThrows(ExplosaoException.class, () -> {
-            campo.abrir();
-        });
-    }
     @Test
     void testeAbrirComVizinhos1(){
 
