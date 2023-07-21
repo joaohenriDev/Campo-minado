@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="campo-minado:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/campo_minado_jar</output-path>
+    <root id="root">
+      <element id="archive" name="campo-minado.jar">
+        <element id="module-output" name="campo-minado" />
+      </element>
+      <element id="library" level="module" name="JUnit5.8.1" module-name="campo-minado" />
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar" />
+      <element id="library" level="module" name="JUnit4" module-name="campo-minado" />
+    </root>
+  </artifact>
+</component>
