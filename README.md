@@ -15,7 +15,7 @@ O projeto Campo Minado é uma implementação do clássico jogo de Campo Minado 
 
 # Instruções de uso
 
-Para Iniciar você deve clonar este repositorio
+Para Iniciar você deve clonar este repositorio ou você pode apenas baixar o campo-minado.jar se quiser apenas jogar ele sem precisar de Ide.
 
 ![image](https://github.com/joaohenriDev/Campo-minado/assets/118625621/e704acd5-73fd-46a6-9720-20c3741d6784)
 
@@ -32,6 +32,7 @@ Para Iniciar você deve clonar este repositorio
 6 - Continue jogando até limpar o tabuleiro ou acertar uma mina.
 
 7 - O jogo vai reiniciar automaticamente após você perder ou ganhar o jogo.
+
 
 
 # Padrão de Projeto Observer
